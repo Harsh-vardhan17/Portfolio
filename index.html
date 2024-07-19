@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <img src="./assets/logo.jpg" class="logo">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobile-nav">
+            <img src="./assets/logo.jpg" class="logo">
+            <div class="mobile-menu">
+                <div class="mobile-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/pic2.jpg" alt="Harshavardhan profile picture"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hey, There!! I am</p>
+                <h1 class="title">Harshavardhan</h1>
+                
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/Data Analyst Resume.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="social-container">
+                    <img src="./assets/linkedin_dark.png"
+                    alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/harsha-vardhan-14007717b/'"
+                    />
+                    <img src="./assets/github_dark.png"
+                    alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/Harsh-vardhan17'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/pic1.jpg" alt="Profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experince icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <p>Data Analyst Job Simulation<br>Accenture(NA)<br /><br>Data Analyst Intern<br>The Sparks Foundation(IND) </p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>M.Sc. Master of Science Computer Science<br /><br>B.E. Bachelor of Engineering Computer Science and Engineering</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <h2>Data-Driven Strategist and Machine Learning Expert</h2>
+                        <p>As a skilled fresh graduate, I excel at transforming complex data into actionable insights. Proficient in Python, SQL, and advanced ML libraries, I am adept at handling large datasets to uncover hidden patterns and inform critical business decisions. With a strong foundation in statistical analysis, NLP, and deep learning, I deliver innovative solutions across diverse domains. My experience with cloud platforms and big data technologies empowers me to tackle complex data challenges effectively. A passionate learner and effective communicator, I am seeking a full-time role to contribute my expertise to a dynamic team.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow_dark.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>    
+        </section>
+        <section id="skills">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Skills</h1>
+            <div class="skills-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="skills-sub-title">Backend Development</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Programming Languages</h3>
+                        <p>Python, R</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Querying Tools</h3>
+                        <p>SQL MySQL PL/SQL</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Framework and Libraries</h3>
+                        <p>Numpy Pandas</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Cloud Platforms</h3>
+                        <p>AWS, Azure</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Hadoop Ecosystem</h3>
+                        <p>Hadoop, Hive and Sqoop</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Collaboration</h3>
+                        <p>jira</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="skills-sub-title">Frontend Development</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Core Skills</h3>
+                        <p>HTML CSS</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>javascript</h3>
+                        <p>ES6+ features</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Framework & libraries</h3>
+                        <p>react.js</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Skills icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>Version Control</h3>
+                        <p>Git Gitbash</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="./assets/arrow_dark.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Lets take a look at my recent works</p>
+            <h1 class="title">Projects</h1>
+            <div class="skills-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/WhatsApp Image 2024-07-17 at 23.24.03_f76d5d0f.jpg" alt="Project 1"
+                            class="project-img"
+                            /> 
+                        </div>
+                        <h2 class="skills-sub-title project-title">Research Project</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Harsh-vardhan17/Research-Project'">GitHub</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/Project-2.jpg" alt="Project-2" class="project-img"
+                            />
+                        </div>
+                        <h2 class="skills-sub-title project-title">Cloud Computing</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Harsh-vardhan17/Cloud-Computing'">Github</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/1696833499995.png" alt="Project-3" class="project-img"
+                            />
+                        </div>
+                        <h2 class="skills-sub-title project-title">Computer Vision and Image Analysis</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Harsh-vardhan17/Computer-vision-and-Image-analysis'">Github</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="see-more-btn" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Harsh-vardhan17'">More Works</button>
+                </div>
+            </div>
+            <img src="./assets/arrow_dark.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"
+            />
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email_dark.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">harshamadhavan17@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./assets/linkedin_dark.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="www.linkedin.com/in/harsha-vardhan-14007717b">LinkedIn</a></p>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            <p>Copyright &#169; 2024 Harshavardhan. All Rights Reserved.</p>
+          </footer>
+        <script src="javascript.js"></script>    
+    </body>
+</html>
