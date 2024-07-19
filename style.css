@@ -1,7 +1,8 @@
 /* General */
 
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Infant:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
 
 * {
     margin: 0;
@@ -16,7 +17,7 @@
 body {
     overflow-x: hidden;
     background: black;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Infant", serif;
     box-sizing: border-box;
 }
 
